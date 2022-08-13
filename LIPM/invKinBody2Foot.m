@@ -18,16 +18,15 @@ function th = invKinBody2Foot(tform, isLeft, varargin)
 %     p.addParameter('BendKneeForward', false, @islogical);
 %     p.parse(varargin{:});
 %
-% Copyright 2019 The MathWorks, Inc.
-
-L1 = -0.12;
+% Copyright 2019 The MathWorks, Inc. 
+L2 = 0.0383; 
+L3 = 0.066;
+L4 = 0.083;
+L5 = 0.049;
+L1 = -0.045;
 if isLeft
     L1 = -L1;
 end
-L2 = 0;
-L3 = 0.4;   % Upper leg length
-L4 = 0.38;  % Lower leg length
-L5 = 0;     % Ankle to foot contact offset
 
 %% 1) Perform some offsets
 tform(1,4) = -tform(1,4);
