@@ -19,11 +19,12 @@ function th = invKinBody2Foot(tform, isLeft, varargin)
 %     p.parse(varargin{:});
 %
 % Copyright 2019 The MathWorks, Inc. 
-L2 = 0.0383; 
-L3 = 0.066;
-L4 = 0.083;
-L5 = 0.049;
-L1 = -0.045;
+L1 = 0.05625; 
+L2 = 0.05305; 
+L3 = 0.08075;
+L4 = 0.09775;
+L5 = 0.06375;
+L1 = -L1;
 if isLeft
     L1 = -L1;
 end
