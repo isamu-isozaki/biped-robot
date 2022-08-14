@@ -47,7 +47,7 @@ cos4 = ((p(1)+L5)^2 + p(2)^2 + p(3)^2 - L3^2 - L4^2)/(2*L3*L4);
 temp = 1 - cos4^2;
 if temp < 0
     temp = 0;
-    disp('Waning: Unable to reach desired end-effector position/orientation');
+    %disp('Waning: Unable to reach desired end-effector position/orientation');
 end
 
 th4 = atan2(sqrt(temp),cos4);

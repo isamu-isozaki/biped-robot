@@ -9,3 +9,5 @@ close all
 
 %% Add folders to the path
 addpath(genpath('fullbot_v3'), genpath('Libraries'),genpath('LIPM'),genpath('ModelSimulation'));                  % Other dependencies
+
+actuatorType=1;
